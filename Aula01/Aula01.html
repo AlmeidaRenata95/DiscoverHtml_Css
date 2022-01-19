@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando conteúdo da aula 01</title>
+</head>
+<body>
+    <!--
+<h1>Conceitos</h1>
+<p>O que é html ? Hypertext Markup Language</p>
+    <p>É uma forma de escrita, uma linguagem de marcação de textos, quer permite a construção websites.</p>
+<b>Comentários</b>
+<!--
+    Hypertext Markup Language
+    HT= hypertext: hiper texto
+    M= mark
+    L= language
+    não aparecerá na página do usuário
+-->
+<hr>
+<h2>Anatomia das tags</h2>
+<p>
+- Abertura de tag 
+- Fechamento de tag 
+- Conteúdo 
+- Elementos
+</p>
+<b>Exemplo</b>
+<h1> isso é uma abertura de tag
+    O título
+</h1> isso é o fechamento de tag
+
+Existe também elementos ou tags vazias, ou seja não há fechamento.
+
+Exemplo:
+<img> <input> 
+<hr>
+Atributos
+Elementos html possuem atributos.
+Atributos html 
+- informações html
+- configurações 
+<img src="conteudo" alt="texto alternativo"> <!--nesta tag não consta apenas as informações do elemento, mas também as configurações. O alt serve para inserior um texto alternativo caso a imagem src não funcione-->
+<hr>
+Atributos booleanos
+- não precisam de Conteúdo
+<input type="text" disabled> <!--disable desabilita e nao consigo inserir o texto, é um atributo verdadeiro ou falso-->
+<hr>
+Atributos globais mais utilizados para os elementos html
+- class
+- contentditable
+- data-e 
+- hidden
+- id
+- style 
+- tabindexs
+- title 
+Exemplo
+<div class="carrinho" contenteditable="true"> <!--contentedible pode receber falso ou verdade, mas consigo edita-lo. Apenas o que coloquei a classe será editado-->
+    conteúdo <!--elementos aqui dentro-->
+</div>
+Posso colocar mais de um elemento classe carrinho, a classe será utilizada para aplicar estilo CSS e pegar no JS. 
+<div class="carrinho" data-id=""> <!--é um atrivuto global capaz de realizar tarefas lógicas, é mais usado no JS e no CSS-->
+    conteúdo
+</div>
+<div class="carrinho" hidden> <!--hidden some com o conteúdo-->
+    conteúdo
+</div>
+<div title="Definir um título"><!--caso o usuário deixe o mouse descansando, aparecerá um titulo na tag-->
+    conteúdo
+</div>
+
+Exemplo do atributo tabindex <!--usado para questões de acessibilidade. Navegação com o tab do teclado, esse segue conforme consta no atributo-->
+<div tabindex="3">
+    conteúdo
+</div>
+<div tabindex="1">
+    conteúdo
+</div>
+<div tabindex="2">
+    conteúdo
+</div>
+<hr>
+Aninhamento de tags
+-hierarquia
+-fluxo
+-Posicionamento de elementos
+
+<p> Primeiro <em>parágrafo</em> do conteúdo html</p> <!-- "em" é filho do "p". a tag "p" é um elemento em bloco-->
+    As tags são lidas por ordem, de cima para baixo.
+<hr>
+Caracteres reservados se comportam diferente, eles dão erro ao usa-los nas tags, existem maneiras para utiliza-los. 
+<p>
+    &lt; <!--coloca o caracter "<" menor que -->
+    os espaços 
+    &gt; <!--colocar o caracter ">" maior que-->
+    &amp; <!--o "&" comercial-->
+    <br>
+    &quot; que colocamos &quot; <!--aspas duplas-->
+    <br>
+    &apos; alem da quebras de linha sao 
+    ignorados &apos;
+</p>
+<hr>
+</body>
+-->
