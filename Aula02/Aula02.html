@@ -76,11 +76,11 @@
     </p>
     <hr>
     <b>Lista de descrição</b>
-    <p>exemplo</p>
+    <p>exemplo:</p>
     <h2>glossário</h2>
     <dl>
-        <dt>Hypertext</dt>
-        <dd>é um hiper text com possibilidades</dd>
+        <dt>Hypertext</dt> <!--dt : termo de descrição-->
+        <dd>é um hiper text com possibilidades</dd> <!--dd: descrição-->
 
         <dt>Markup</dt>
         <dd>Marcação do texto</dd>
@@ -89,8 +89,31 @@
         <dd>Linguagem com sua semântica e sintaxe</dd>
     </dl>
 <!--dl tag para lista de descrições. "dt" tag para o termo da descrição. "dd" tag para descrição-->
-
-
+    <hr>
+    <b>Representação de código</b> <!--alguns acaracteres especiais não funcionam perfeitamente no html, para isso existe:-->
+    <code>
+        Partes genéricas de código
+    </code>
+    <pre>
+        Blocos de código, pois essa tag mantém os espaços em brancos e recuos que eu colocar no meu código. 
+    </pre>
+    <p>exemplo:</p>
+    <pre>
+        <code>
+            document.querySelector("body") <!--este é uma linguagem javascript, usando o pre e o code o html respeitará o que eu quero colocar, espaços ou recuos-->
+        </code>
+    </pre>
+    <hr>
+    <b>Elementos genéricos</b>
+    <p>
+        <div>"div" é um elemento de bloco</div>
+        <span> é um elemento de linha </span>
+    </p>
+    <p>exemplo:</p>
+    <div> 
+        <span>Camiseta</span>
+        <span>r$ 99,00</span>
+    </div>
 </body>
 
 </html>
