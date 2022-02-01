@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Tabelas</title>
+</head>
+<body>
+    <p>Criar uma tabela com 2 lojas demonstrando quantos produtos foram produzidos, quantos vendidos e agrupado por nome dos produtos</p>
+    <table>
+        <caption>Produzidos x Vendidos por Lojas</caption>
+
+        <colgroup><!--é uma tag utilizada para agrupar as colunas. Por questões de acessibilidade e motores de busca é muito utilizável-->
+            <col>
+            <col span="2" style="background-color: blueviolet"> <!--assim como o rowspan, para agruparmos as colunas corretas é preciso utilizar o span e o numero das colunas para agrupar de froma adequada-->
+            <col span="2" style="background-color: cadetblue">
+        </colgroup> 
+            <thead>
+                <tr>
+                    <th rowspan="2"></th> <!--o rowspan ocupa/empurra as linhas-->
+                    <th colspan="2" scope="colgroup">Afonso Pena</th>
+                    <th colspan="2" scope="colgroup">Antônia Pereira</th>
+                </tr>
+                <tr>
+                    <th scope="col">Produzidos</th>
+                    <th scope="col">Vendidos</th>
+                    <th scope="col">Produzidos</th>
+                    <th scope="col">Vendidos</th>
+                </tr>
+            </thead>
+                <tr>
+                    <th scope="row">Vassouras</th>
+                    <td>50</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th scope="row">Baldes</th>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>25</td>
+                </tr>
+                <p>O atributo scope serve para permitir acessibilidade,saiba que o escopo do cabeçalho é relacionado com, o agrupamento, ou a coluna, ou a linha, o atributo é escrito </p>
+
+
+
+
+
+    </table>
+</body>
+</html>
