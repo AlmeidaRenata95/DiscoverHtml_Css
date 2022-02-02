@@ -1,12 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conhecendo o CSS</title>
+    <title>O guia estelar de CSS</title>
 </head>
 <body>
-    
+    <b>Conhecendo o CSS</b>
+        <p>O CSS não é um linguagem de programação, assim como o html ela é apenas uma forma de escrita ou código para criar estilos no html. O css é o que deixa o html bonito, ele embeleza.
+        </p>
+    <b>Comentários</b>
+        <p>Os comentários nõ afetam os códigos, ajuda a lembrar sobre os estudos, dicas e facilita a leitura e entendimento. Nunca/jamais podemos esquecer de fechar esses comentários. No css ele será assim: /*codigo*/</p>
+    <b>Anatomia</b>
+        <p> A Anatomia ou estrututra do CSS funciona da seguinte forma: temos o nome de algum elemento, uma chave aberta <!-- essa são as chaves {}--> e uma fechada embaixo, e no meio vamos ter propriedades e seus valores.</p>
+        <p>Exemplo: 
+            <!--
+                h1{
+                    color: blue;
+                    font-size: 60px;
+                    background: gray
+                }
+        -->
+        <ul>
+            <li>Selectors: Nesse caso o h1, que vai buscar no HTML a tag h1 e aplicar as mudanças.</li>
+            <li>Declaration: As chaves e tudo dentro delas.</li>
+            <li>Properties: As coisas a serem alteradas.</li>
+            <li>Property values: Os novos valores que estamos atribuindo a tais propriedades.</li>
+        </ul>
+    </p>
+    <b>Seletores</b>
+    <p>
+        Os seletores são o que conectam um elemento HTML com o CSS, existem vários tipos, inclusive, nós vimos um na última aula, o Element/Type selector, mas também temos o seletor global, que é um * "asterisco", ID selector, que é # "cerquilha, cardinal" e o ID do elemento HTML, class selector, que é um . "ponto" e o nome da classe, e mais alguns que podemos entender mais tarde no curso.
+    <p>
+        Exemplo:
+    =</p>
+    <!--
+<div id="container" class="m-40">
+	<h1>Título</h1>
+	<h2>Subtitulo</h2>
+</div>
+CSS
+/* ID selector */
+#container {
+	width: 200px;
+}
+
+/* Class selector */
+.m-40 {
+	margin: 40px;
+}
+
+/* Element/Type selector + Agrupamento de seletores */
+h1, h2 {
+	color: blue;
+	font-size: 60px;
+	background: gray;
+}
+-->
+   
+    </p>
+    <b>Box Model</b>
+    <p>O box model nada mais é do que ideias de caixas que possuem limites/tamanhos. É uma caixa retangular que possui algumas propriedades: </p>
+    <uL>
+        <li>Tamanho largura x altura width e height, respectivamente</li>
+        <li>Conteúdo: o content</li>
+        <li>Bordas: o border</li>
+        <li>Preenchimento interno: o padding</li>
+        <li>Espaços fora da caixa: a margin</li>
+    </uL>
+    <b>Importante! Pense que todo elemento no HTML é uma caixa. Observar sempre os layouts pensando em Box Model.</b>
+    <b>Origem do CSS</b>
+    <p></p>
+    <b>A Cascata</b>
+    <p></p>
+    <b>Especificidade</b>
+    <p></p>
+    <b>Regra important</b>
+    <p></p>
+    <b>At rules</b>
+    <p></p>
+    <b>Shorthand</b>
+    <p></p>
+    <b>Funções</b>
+    <p></p>
+    <b>DevTools</b>
+    <p></p>
+    <b>Cuidados com a escrita</b>
+    <p></p>
+    <b>Vendor prefixes</b>  
+    <p></p>  
 </body>
 </html>
