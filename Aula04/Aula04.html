@@ -8,27 +8,71 @@
 </head>
 <body>
     <b>Tabelas</b>
-    <p></p>
+    <!--<table>
+    </table>
+    -->
+    <p><b>Prós</b>: Visualização de dados via linhas e colunas, Boa acessibilidade para leitura de dados.<b> Contras</b>: Pouco flexível, precisa de estilização para melhor visualização. Não usar na criação dos layouts.</p>
     <hr>
     <b>Tabela básica</b>
-    <p></p>
+    <p>Exemplo:</p>
+    <table>
+        <tr><!--tr é a linha-->
+            <th>Nome</th> <!--th é o cabeçalho-->
+            <th>idade</th>
+        </tr>
+        <tr>
+            <th>Renata</th>
+            <th>26</th>
+        </tr>
+        <tr>
+            <th>Diego</th>
+            <th>32</th>
+        </tr>
+    </table>
     <hr>
     <b>Organizando Tabelas</b>
-    <p></p>
+    <p>Exemplo:</p>
+    <table>
+    <caption>Pessoas por idade</caption> <!--faz uma descrição da tabela-->
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td>Renata</td>
+                <td>26</td>
+            </tr>
+            <tr>
+                <td>Diego</td>
+                <td>32</td>
+            </tr>
+        </tbody>
+        <tfoot><!--isso é um rodapé, sempre estará no final da tabela.-->
+            <tr>
+                <td>Total:</td>
+                <td>2 Pessoas</td>
+            </tr>
+        </tfoot>
+    </table>
     <hr>
     <b>Tabela complexa</b>
-    <p></p>
+    <p>Exemplo com exercício mostrado no curso.</p>
+        <!-- Criar uma tabela com 2 lojas demonstrando quantos produtos foram produzidos, quandot s vendidos e agrupado por nome dos produtos.-->
     <hr>
     <b>THead Complexa</b>
-    <p></p>
-    <hr>
     <b>TBody Complexo</b>
-    <p></p>
+    <p>THead e TBody foram aplicados em um documento diferente, abaixo:</p>
+    <a href="exercicioTabela.html">Clique aqui para ver o Exercício das Tabelas complexas.</a>
+    <!--IMPORTANTE! SOBRE ROWSPAN: é um forma de empurrar/ocupar linhas-->
     <hr>
-    <b>Melhorando o aspecto com colgroup
-    <p></p>
+    <b>Melhorando o aspecto com colgroup</b>
+    <p>Colocamos a tag colgroup, dentro colocamos 3 <col>, onde na segunda colocamos o atibuto style="background-color: red" e na terceira style="background-color: blue", porém ainda está desorganizado por isso colocaremos span="2" para alinharmos a cor com a coluna.</p>
     <hr>
-    <b>Melhorando acessibilidade
+    <b>Melhorando acessibilidade</b>
+        <p>O atributo scope serve para permitir acessibilidade,saiba que o escopo do cabeçalho é relacionado com, o agrupamento, ou a coluna, ou a linha, o atributo é escrito. </p>
     <p></p>
 </body>
 </html>

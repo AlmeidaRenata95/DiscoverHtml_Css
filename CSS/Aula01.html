@@ -29,6 +29,7 @@
             <li>Property values: Os novos valores que estamos atribuindo a tais propriedades.</li>
         </ul>
     </p>
+    <hr>
     <b>Seletores</b>
     <p>
         Os seletores são o que conectam um elemento HTML com o CSS, existem vários tipos, inclusive, nós vimos um na última aula, o Element/Type selector, mas também temos o seletor global, que é um * "asterisco", ID selector, que é # "cerquilha, cardinal" e o ID do elemento HTML, class selector, que é um . "ponto" e o nome da classe, e mais alguns que podemos entender mais tarde no curso.
@@ -60,6 +61,7 @@ h1, h2 {
 -->
    
     </p>
+    <hr>
     <b>Box Model</b>
     <p>O box model nada mais é do que ideias de caixas que possuem limites/tamanhos. É uma caixa retangular que possui algumas propriedades: </p>
     <uL>
@@ -70,16 +72,40 @@ h1, h2 {
         <li>Espaços fora da caixa: a margin</li>
     </uL>
     <b>Importante! Pense que todo elemento no HTML é uma caixa. Observar sempre os layouts pensando em Box Model.</b>
+    <hr>
     <b>Origem do CSS</b>
-    <p></p>
+    <p>Existe algumas forma de iniciar o CSS, podemos usar em linha junto ao elemento selecionado do html, podemos utilizar incluindo a tag "style" dentro do meu head do html, ou através da tag link, onde vamos linkar um documento CSS externo, um outro arquivo para nosso documento HTML, feito da seguinte forma:</p>
+    <hr>
     <b>A Cascata</b>
-    <p></p>
+    <p>Em relação a cascata/ CSS existe prioridades que o próprio browser irá entender, ele aplicará regras caso haja muitos elementos. O estilo seerá sempre lido de cima para baixo.</p>
+    <ul>
+        <li>Origem de estilo</li>
+            <li>Uma regra importante nessa sequência, sendo o mais importante. inline > tag style > tag link</li>
+    </ul>
+    <hr>
     <b>Especificidade</b>
-    <p></p>
+    <p>É um cálculo matemático, onde, cada tipo de seletor e origem do estilo possuem valores a serem considerados.</p>
+    <ul>
+        <li>Universal selector, combinators e negations pseudo-class <!--(:no())--></li>
+        <li>Element type selector e pseudo-elements.<!--(::before, ::after)--></li>
+        <li> Classes e atrributes selectors <!--([type=radio])--></li>
+        <li>ID selector</li>
+        <li>inline</li>
+    </ul>
+    <hr>
     <b>Regra important</b>
-    <p></p>
+    <p>evitar o uso do <!--!important--> no css, pois ele "rouba" todos os estilos dos demais seletores, pode ser usado em casos espeficos, como uso de uma biblioteca css de outra pessoa.</p>
+    <hr>
     <b>At rules</b>
-    <p></p>
+    <p>São regras relacionadas ao comportamento do CSS, começa com um "@" seguido do identificador e valor</p>
+    <p>Exemplo:</p>
+        <ul>
+            <li>@important: serve para incluir um CSS externo.</li>
+            <li>@media: são regras condicionais para vários dispositivos.</li>
+            <li>@font-face: é para colocar fontes externas.</li>
+            <li>@keyframes: serve para as animations do css.</li>
+        </ul>
+    <hr>
     <b>Shorthand</b>
     <p></p>
     <b>Funções</b>
