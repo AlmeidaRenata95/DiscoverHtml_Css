@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nem tudo são Pixels</title>
+</head>
+<body>
+    <b>Tipos númericos</b>
+        <ul>
+            <li><integer> Número inteiro como -10 ou 223</li>
+            <li><number> Número decimal como -2.4, 64, ou 0.234</li>
+            <li><dimension> É um <number> com uma unidade junto: 90deg, 2s, 8px</li>
+            <li><percentagem> Representa a fração de outro número: 50%</li>
+        </ul>
+    <b>Unidades comuns</b>
+        <ul>
+            <li><length> Representa um valor de distância: px, em, vw</li>
+            <li><angle> Representa um angulo: deg, rad, turn</li>
+            <li><time> representa um tempo: s, ms</li>
+            <li><resolution> Representa resoluições para dispositvos: dpi</li>
+        </ul>
+    <hr>
+    <b>Distãncias absolutas e relativas</b>
+    <p>Distâncias absolutas São fixas e não alteram seu valor. "length" </p>
+        <ul>
+            <li>Unidade</li>
+                <li>cm: centímetros - a equivalência 1 cm = 96px/2.54</li>
+                <li>in: inches ou polegadas - a equivalência 1in = 2.54cm = 96px</li>
+                <li>px: pixels - a equivalência 1px = 1/96th of 1in  </li>
+        </ul>
+    <b>O mais comum e mais utilizado é o px. Não é recomendado usar cm.</b>
+    <hr>
+    <b>Distâncias relativas</b>
+    <ul>
+        <li>São relativas a um outro valor, pode ser o elemento pai, ou root, ou o tamanho da tela.</li>
+        <li>Benefício: Maior adaptação aos diferentes tipos de tela.</li>
+    </ul>
+    <p>Exemplo:</p>
+        <ul>
+            <li>Unidade</li>
+                <li>em = tamanho da font do elemento pai</li>
+                <li>rem = Tamanho da font do elemento raiz (root/html)</li>
+                <li>vw = 1% da viewport width</li>
+                <li>vh = 1% da viewport height</li>
+        </ul>
+        <b>Normalmente o tamanho da font padrão do navegador é de 16px e para mudar esse valor temos que fazer a alteração no root ou no elemento html.
+        O viewport é a parte da tela que está sendo exibida. No caso dos navegadores web, é o que é exibido na janela/tela do documento. Conteúdos que estão fora do viewport só serão exibidos quando feito um scroll da área de visualização.</b>
+    <!--:root {
+	font-size: 18px;
+    }
+
+    /* OU */
+
+    html {
+	font-size: 18px;
+    }-->
+    <b>Porcentagens</b>
+        <p>As porcentagens são valores bem flexíveis.Em muitos casos é tratado da mesma maneira que as distâncias <length>. </p>
+            <ul>
+                <li>Sempre será relativo a algum valor</li>
+                <li>é Relativo ao elemento pai</li>
+            </ul>
+    <hr>
+    <b>Position</b> <!--<position>-->
+        <p>Representa um conjunto de coordenadas 2D. </p>
+            <ul>
+                <li>top, right, bottom, left e center</li>
+                <li>Usado para alguns tipos de propriedades como o background-position</li>
+                <li>Não confundir com a propriedade `position`</li>
+            </ul>
+    <hr>
+    <b>Função no CSS</b>
+        <p>Em programação, funções são reconhecidas por causar um reaproveitamento de código. Exemplos:</p>
+    <ul>
+        <li>rgb()</li>
+        <li>hsl()</li>
+        <li>ulr()</li>
+        <li>calc()</li>
+    </ul>
+    <b>Strings e Identificadores</b>
+        <ul>
+            <li>Strings: texto envolto de aspas</li>
+            <li>Identificadores: red, black, gold;</li>
+        </ul>
+    <!-- Exemplo;
+.box::after {
+	content: "Isso é uma string" isso é uma string, a string também é usada em linguagem de programação.
+}
+    -->
+</body>
+</html>-
