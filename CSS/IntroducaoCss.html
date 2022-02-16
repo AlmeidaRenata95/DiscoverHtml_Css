@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O guia estelar de CSS</title>
+</head>
+<body>
+    <b>Conhecendo o CSS</b>
+        <p>O CSS não é um linguagem de programação, assim como o html ela é apenas uma forma de escrita ou código para criar estilos no html. O css é o que deixa o html bonito, ele embeleza.
+        </p>
+    <b>Comentários</b>
+        <p>Os comentários nõ afetam os códigos, ajuda a lembrar sobre os estudos, dicas e facilita a leitura e entendimento. Nunca/jamais podemos esquecer de fechar esses comentários. No css ele será assim: /*codigo*/</p>
+    <b>Anatomia</b>
+        <p> A Anatomia ou estrututra do CSS funciona da seguinte forma: temos o nome de algum elemento, uma chave aberta <!-- essa são as chaves {}--> e uma fechada embaixo, e no meio vamos ter propriedades e seus valores.</p>
+        <p>Exemplo: 
+            <!--
+                h1{
+                    color: blue;
+                    font-size: 60px;
+                    background: gray
+                }
+        -->
+        <ul>
+            <li>Selectors: Nesse caso o h1, que vai buscar no HTML a tag h1 e aplicar as mudanças.</li>
+            <li>Declaration: As chaves e tudo dentro delas.</li>
+            <li>Properties: As coisas a serem alteradas.</li>
+            <li>Property values: Os novos valores que estamos atribuindo a tais propriedades.</li>
+        </ul>
+    </p>
+    <hr>
+    <b>Seletores</b>
+    <p>
+        Os seletores são o que conectam um elemento HTML com o CSS, existem vários tipos, inclusive, nós vimos um na última aula, o Element/Type selector, mas também temos o seletor global, que é um * "asterisco", ID selector, que é # "cerquilha, cardinal" e o ID do elemento HTML, class selector, que é um . "ponto" e o nome da classe, e mais alguns que podemos entender mais tarde no curso.
+    <p>
+        Exemplo:
+    =</p>
+    <!--
+<div id="container" class="m-40">
+	<h1>Título</h1>
+	<h2>Subtitulo</h2>
+</div>
+CSS
+/* ID selector */
+#container {
+	width: 200px;
+}
+
+/* Class selector */
+.m-40 {
+	margin: 40px;
+}
+
+/* Element/Type selector + Agrupamento de seletores */
+h1, h2 {
+	color: blue;
+	font-size: 60px;
+	background: gray;
+}
+-->
+   
+    </p>
+    <hr>
+    <b>Box Model</b>
+    <p>O box model nada mais é do que ideias de caixas que possuem limites/tamanhos. É uma caixa retangular que possui algumas propriedades: </p>
+    <uL>
+        <li>Tamanho largura x altura width e height, respectivamente</li>
+        <li>Conteúdo: o content</li>
+        <li>Bordas: o border</li>
+        <li>Preenchimento interno: o padding</li>
+        <li>Espaços fora da caixa: a margin</li>
+    </uL>
+    <b>Importante! Pense que todo elemento no HTML é uma caixa. Observar sempre os layouts pensando em Box Model.</b>
+    <hr>
+    <b>Origem do CSS</b>
+    <p>Existe algumas forma de iniciar o CSS, podemos usar em linha junto ao elemento selecionado do html, podemos utilizar incluindo a tag "style" dentro do meu head do html, ou através da tag link, onde vamos linkar um documento CSS externo, um outro arquivo para nosso documento HTML, feito da seguinte forma:</p>
+    <hr>
+    <b>A Cascata</b>
+    <p>Em relação a cascata/ CSS existe prioridades que o próprio browser irá entender, ele aplicará regras caso haja muitos elementos. O estilo seerá sempre lido de cima para baixo.</p>
+    <ul>
+        <li>Origem de estilo</li>
+            <li>Uma regra importante nessa sequência, sendo o mais importante. inline > tag style > tag link</li>
+    </ul>
+    <hr>
+    <b>Especificidade</b>
+    <p>É um cálculo matemático, onde, cada tipo de seletor e origem do estilo possuem valores a serem considerados.</p>
+    <ul>
+        <li>Universal selector, combinators e negations pseudo-class <!--(:no())--></li>
+        <li>Element type selector e pseudo-elements.<!--(::before, ::after)--></li>
+        <li> Classes e atrributes selectors <!--([type=radio])--></li>
+        <li>ID selector</li>
+        <li>inline</li>
+    </ul>
+    <hr>
+    <b>Regra !important</b>
+    <p>evitar o uso do <!--!important--> no css, pois ele "rouba" todos os estilos dos demais seletores, pode ser usado em casos espeficos, como uso de uma biblioteca css de outra pessoa.</p>
+    <hr>
+    <b>At rules</b>
+    <p>São regras relacionadas ao comportamento do CSS, começa com um "@" seguido do identificador e valor</p>
+    <p>Exemplo:</p>
+        <ul>
+            <li>@important: serve para incluir um CSS externo.</li>
+            <li>@media: são regras condicionais para vários dispositivos.</li>
+            <li>@font-face: é para colocar fontes externas.</li>
+            <li>@keyframes: serve para as animations do css.</li>
+        </ul>
+    <hr>
+    <b>Shorthand</b>
+    <p>é a junção de propriedades do CSS, é uma boa prática, pois o sentido dela é deixar tudo mais clean, resumido e prático, de fácil leitura e entendimento.<p>
+    <p>Exemplo:<br>
+        <b>background properties</b>
+        background-color: #000;
+        background-image: url(images/bg.gif);
+        background-repeat: no-repeat;
+        background-position: left top;<br>
+
+    <b>background shorthand</b>
+        background: #000 url(images/bg.gif) no-repeat left top; <!--observar que todas as propriedades acima foram colocadas no metodo shorthand-->
+    </p>
+    <b>font properties</b>
+    font-style: italic;
+    font-weight: bold;
+    font-size: .8em;
+    line-height: 1.2;
+    font-family: Arial, sans-serif;<br>
+
+    <b>font shorthand</b>
+    font: bold italic .8em/1.2 Arial, sans-serif;
+    <p>Algumas das características do shorthand:<br>
+    Não irá considerar propriedades anteriores, ou seja, caso faça um shorthand, apenas ele será considerado, quaisquer propriedades anteriores serão substituídas pelas do shorthand.
+    Os valores que não forem especificados irão assumir o valor padrão.
+    Por fim, geralmente, a ordem descrita não importa, mas, caso haja muitas propriedades com valores semelhantes, poderemos encontrar problemas.</p>
+    <hr>
+    <b>Funções</b>
+    <p>Um tipo de valor existente no CSS, é estruturado com um nome seguido de abre e fecha parênteses.Recebe um argumento, que são seus valores.</p>
+    <p>Exemplo:</p>
+    <p>color: rgb(255,0,100);</p>
+    <b>DevTools</b>
+    <p>Uma das ferramentas mais importantes para o desenvolvedor CSS é o DevTools (do inglês, Ferramentas de Desenvolvedor), é recomendado que você estude e faça uso da mesma, pois será muito utilizada.</p>
+    <b>Cuidados com a escrita</b>
+    <p></p>
+    <b>Vendor prefixes</b>  
+    <p></p>  
+</body>
+</html>
