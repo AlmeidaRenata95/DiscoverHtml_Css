@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores no CSS</title>
+</head>
+<body>
+    <b>Introdução</b>
+    <p>Usamos CSS para alterar cores do nosso documento.</p>
+        <ul>Tipos:
+            <li>background-color: para caixas</li>
+            <li>color: para textos</li>
+            <li>border-color: para caixas</li>
+            <li>outros...</li>
+        </ul>
+        <ul>Valores:
+            <li>palavra-chave (blue, transparent)</li>
+            <li>hexadecimal</li>
+            <li>funções: rgb, rgba, hsl, hsla</li>
+        </ul>
+    <b>Keyword named values</b>
+        <p>Nessa aula vamos entender as bases de como aplicar cores no CSS.</p>
+            <!--
+                html
+                    <div>
+                        <h1>Um texto aqui</h1>
+                        <p>Mais texto</p>
+                    </div>
+                css
+                    div {
+                    color: blue;
+                    }
+
+                    h1 {
+                    color: red;
+                    }
+            -->
+    <b>Hexadecimal</b>
+        <p>Nessa aula vamos aprender a trabalhar com valores hexadecimal</p>
+            <!--
+                /*<hex-color> values 0-9 e A-F*/
+                color: #090; /* RED, GREEN, BLUE */
+                color: #009900;
+                color: #090a;
+                color:#009900aa;
+            -->
+    <b>RGB</b>
+        <ul>
+            <li>RGB - Red, Green, Blue</li>
+            <li>O alpha representa a transparência da cor</li>
+        </ul>
+    <!--
+            /*<rgb()> values */ 
+            color: rgb(34, 12, 64, 0.6) /* 0-255 */
+            color: rgba(34, 12, 64, 0.6)
+    -->
+    <b>HSL</b>
+        <p>HSL → Hue - Saturation - Lightness</p>
+            <!--
+                color: hsl(180, 100%, 50%, 60%)
+                color: hsla(180, 100%, 50%, 60%)    
+            -->
+    <b>Global Values</b>
+        <p>Nessa aula vamos ver sobre os valores globais da propriedade color.</p>
+        <!--
+            /* Global values */
+            color: inheritr; /* Herda a cor do elemento anterior */
+            color: initial; /* Volta a sua cor inicial */
+            color: unset; /* Pega a cor do contexto */  
+        -->
+    <p>Entendendo esses princípios e com a prática, fica cada vez mais fácil entender como aplicar cores no CSS.</p>
+    
+</body>
+</html>
