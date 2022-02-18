@@ -10,26 +10,122 @@
     <p>O que é o box model: è uma caixa retangular, essa caixa possui propriedades de uma caixa 2D. Ele é fundamental para fazer layouts para a web, maior facilidade de aplicar o css. Cada elemento da página será considerado uma caixa... </p>
         <b>As propriedades são: </b>
             <ul>
-                <li>Tamanho (largura x altura)  = width and height </li>
+                <li>Tamanho (largura x altura)  = width and height. O tamanho total da caixa será feito pelo content-box. </li> 
                 <li>Conteúdo = content</li>
                 <li>Bordas = border</li>
                 <li>Preenchimento interno = padding </li>
                 <li>Espaços fora da caixa = margin </li>
             </ul>
-    <b></b> 
-        <p></p>
+    <!--Exemplo do curso: 
+    /*
+     * {
+        box-sizing: border-box; por padrão né usada essa definição quer aplicará em todo meu css, dessa forma as caixas terão o tamanho que defini a partir da borda.
+        }       
+    */
+        div{
+    width: 100px;  O tamanho total da caixa será feito pelo content-box. o 100px será aplicado ao conteúdo da caixa. Nessa caixa teremos 140px se contarmos a partir da borda, por padrão é contado do conteúdo, para fazer a partir da borda usare o box-sizing: border-box. 
+    height: 100px;
+    border: 1px solid red; 
+    margin: 10%;
+    padding: 0 20px;
+} 
+    Display-block-inline
+    -->
+    <b>Display: block vs inline</b> 
+        <ul>
+            <li>Como as caixas se comportam em relação as outras caixas</li>
+            <li>Comportamento externo das caixas</li>
+        </ul>
+    <b>Comportamento do Display block: </b>
+        <ul>
+            <li>Ocupa toda a linha, colocando o próximo elemento abaixo desse</li>
+            <li>width e height são respeitados</li>
+            <li>padding, margin, border irão funcionar normalmente</li>
+            <li>"p" "div" "section" todos os headings "h1" "h2"...</li>
+        </ul>
+    <b>Comportamento do Display inline</b>
+        <ul>
+            <li>Os elementos ficam ao lado do outro e não empurram outros elementos para baixo.</li>
+            <li>width e height não funcionam.</li>
+            <li>Somente valores horizontais de margin.</li>
+            <li> "a"" "strong" "span" " em" </li>
+        </ul>
     <hr>
-    <b></b>
-        <p></p>
+    <b>Margin</b>
+        <p>È o espaço (margem) entre os elementos<br>
+            Podemos dividir o margin em 4 valores:</p>
+                <ul>
+                    <li>margin-top</li>
+                    <li>margin-right</li>
+                    <li>margin-bottom</li>
+                    <li>margin-left</li>
+                    <li>values: length, percentage \ auto</li>
+                </ul>
+        <b>Shorthand da margin. *cuidado com margin collapsing, top se ajunta com bottom*</b>
+            <ul>
+                <li>margin: 12px"top" , 16px"right" , 10px"bottom" , 4px"left";</li>
+                <li>margin: 12px"top" , 16px "laterais", 0"bottom";</li> 
+                <li>margin: 8px"top e bottom", 16px"laterais";</li>
+                <li>margin: 8px "aplica para todos as dimensoes"</li>
+            </ul>
+                <b>Por padrão, o navegador Chrome já aplica 8px de margin, isso está na documenta~
+                    ao. <!-- utilizando o elemento * no css "que aplica em todo o body" podemos colocar margin: 0; dessa forma o navegador nao aplica o 8px por padrao-->
+                </b>
+            <!--quando um elemento está ao lado do outro ele nao faz margin collapsing, quando o elemento esta um em baixo do outro ele faz o margin collapsing e nao soma, apenas ajunta as margens.-->
     <hr>
-    <b></b>
-        <p></p>
+    <b>Padding</b>
+        <p>Meu padding faz meu conteúdo se afastar da borda da minha box. o Paddin nao faz as caixas serem empurradas, ela é o espaço interno. </p>
+                <ul>
+                    <li>padding-top</li>
+                    <li>padding-right</li>
+                    <li>padding-bottom</li>
+                    <li>padding-left</li>
+                </ul>
+            <p>O padding pode ter valores (values) de comprimento (px, em, rem) ou de porcentagem (%).Na aula sobre box-xizing aprendemos como resolver essa diferença na largura do elemento</p>
+    <!--
+        padding: 12px 16px 10px 4px; /* TOP = 12px | RIGHT = 16px | BOTTOM = 10px | LEFT = 4px */
+        padding: 12px 16px 0; /* TOP = 12px | RIGHT = 16px | BOTTOM = 0px | LEFT = 16px */
+        padding: 8px 16px; /* TOP = 8px | RIGHT = 16px | BOTTOM = 8px | LEFT = 16px */
+        padding: 8px; /* TOP = 8px | RIGHT = 8px | BOTTOM = 8px | LEFT = 8px *
+    -->
     <hr>
-    <b></b>
-        <p></p>
-    <hr>
-    <b></b>
-        <p></p>
+    <b>Border-outline</b>
+        <p>São as bordas da caixa</p>
+            <ul>Valores:
+                <li>border-style</li>
+                <li>border-width</li>
+                <li>border-color</li>
+                    <ul>
+                        <li>style: solid | dotted | dashed | double | groove | ridge | inset | outset</li>
+                        <li>width: <length></li>
+                        <li>color: <color></li>
+                    </ul>
+            </ul>
+        <!--div {
+	/* shorthand */
+	border-top: solid 2px; /* top | right | bottom | left */
+
+	/* style */
+	border: solid;
+
+	/* width <length> | style */
+	border: 2px dotted;
+
+	/* style | color */
+	border: outset #f33;
+
+	/* width | style | color */
+	border: medium dashed green;
+
+}-->
+    <b>Outline</b>
+        <p>O outline é muito semelhante ao border, mas difere em 4 sentidos:</p>
+            <ul>
+                <li>Não modifica o tamanho da caixa, pois não é parte do Box Model</li>
+                <li>Poderá ser diferente de retangular</li>
+                <li>Não permite ajuste individuais</li>
+                <li>Mais usado pelo user agent para acessibilidade, no caso de um input</li>
+            </ul>
     <hr>
 </body>
 </html>
